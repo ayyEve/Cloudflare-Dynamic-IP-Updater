@@ -1,0 +1,17 @@
+{
+    "name": "Cloudflare-Dynamic-IP-Updater",
+    "version": "0.2",
+    "description": "Automatically updates your A records to your public ip",
+    "keywords": [
+        "cloudflare"
+    ],
+    "author": "ayyEve",
+    "dependencies": {
+        "cloudflare": "^2.4.1",
+        "request": "^2.88.0"
+    },
+    "main": "app",
+    "engines": {
+        "node": ">= 0.4.1"
+    }
+}
