@@ -76,5 +76,6 @@ getZone(() => {
         check();
 
         setInterval(check, 1000);
+        console.log("running");
     });
 });
