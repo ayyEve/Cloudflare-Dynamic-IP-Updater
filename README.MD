@@ -11,5 +11,7 @@ apiKey: the Api key associated with your cloudflare account
 domain: the record to update  
 interval: the interval to check for updates (in ms)
 
+Then rename "settings-template.json" to "settings.json"
+
 PLEASE NOTE:
 This does not work for IPv6 (AAAA) records, it only works with IPv4 (A) records
