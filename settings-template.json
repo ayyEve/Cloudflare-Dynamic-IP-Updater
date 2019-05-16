@@ -2,5 +2,7 @@
     "email":"",
     "apiKey":"",
     "domain":"",
+    "zoneName" : "",
+    "domains":["", ""],
     "interval" : 60000
 }
