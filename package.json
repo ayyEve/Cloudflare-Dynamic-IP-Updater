@@ -1,17 +1,16 @@
 {
-    "name": "Cloudflare-Dynamic-IP-Updater",
-    "version": "0.2",
+    "name": "cloudflare-dynamic-ip-updater",
+    "author": "ayyEve",
+    "version": "0.2.0",
     "description": "Automatically updates your A records to your public ip",
     "keywords": [
         "cloudflare"
     ],
-    "author": "ayyEve",
+    "repository": "github:ayyeve/Cloudflare-Dynamic-IP-Updater",
     "dependencies": {
         "cloudflare": "^2.4.1",
         "request": "^2.88.0"
     },
-    "main": "app",
-    "engines": {
-        "node": ">= 0.4.1"
-    }
+    "license": "GNU GPLv3",
+    "main": "app"
 }

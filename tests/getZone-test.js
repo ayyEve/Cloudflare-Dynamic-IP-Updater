@@ -1,28 +1,32 @@
 const settings = require("../settings.json");
 const cf = require('cloudflare') ({
-  email: settings.email,
-  key: settings.apiKey
+    email: settings.email,
+    key: settings.apiKey
 });
 
 function getZone() {
-    const p = cf.zones.browse();
-    let zone = null;
+  const p = cf.zones.browse();
 
-    p.then(t => {
-        console.log("reply: ", t);
+  p.then(t => {
+    console.log("result:", t);
 
-        // filter
-        const i = t.result.filter((n) => {return n.name==settings.domain});
-        console.log("filtered zones: ", i);
-
-        // check
-        if (i.length < 1) return console.log("Please check the domain in settings.js");
-
-        // get
-        zone = i[0].id;
-        console.log("selected zone: ", zone);
+    // filter
+    const i = t.result.filter((n) => {
+      return n.name == settings.zoneName;
     });
-    p.catch(console.error);
+    console.log("filtered:", i);
+
+    // check
+    if (i.length < 1) {
+      return console.log("Please check the zoneName in settings.js");
+    }
+
+    // output
+    zone = i[0];
+    console.log(zone);
+  });
+
+  p.catch(console.error);
 }
 
 getZone();
