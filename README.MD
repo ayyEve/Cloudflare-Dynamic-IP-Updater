@@ -6,11 +6,11 @@ Simple script to automatically update your cloudflair A record to be your public
 How to Use:  
 Step 1.  
 - Simply edit the settings-template.json to reflect your information  
---- email:  the email of your Cloudflare account  
---- apiKey: the Api key associated with your cloudflare account  
---- zoneName: the name of the zone to update (the name you see beside home on dash.cloudflare.com)  
---- domains: the records to update (please keep this as an array)  
---- interval: the interval to check for updates (in ms)  
+-- email:  the email of your Cloudflare account  
+-- apiKey: the Api key associated with your cloudflare account  
+-- zoneName: the name of the zone to update (the name you see beside home on dash.cloudflare.com)  
+-- domains: the records to update (please keep this as an array)  
+-- interval: the interval to check for updates (in ms)  
 
 Step 2:  
 - Rename "settings-template.json" to "settings.json"  
